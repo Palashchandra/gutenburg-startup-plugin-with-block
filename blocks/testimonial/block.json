@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pctheme/testimonial",
+  "title": "Testimonial Slider",
+  "category": "pctheme",
+  "icon": "format-quote",
+  "description": "Testimonial slider with Swiper",
+  "keywords": ["testimonial", "review", "slider"],
+  "textdomain": "pctheme-blocks",
+  "attributes": {
+    "testimonials": {
+      "type": "array",
+      "default": [
+        {
+          "name": "John Doe",
+          "role": "CEO, Company",
+          "content": "This is an amazing product! It has completely transformed the way we work.",
+          "image": "",
+          "rating": 5
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Marketing Manager",
+          "content": "Highly recommend this service. The team is professional and the results speak for themselves.",
+          "image": "",
+          "rating": 5
+        },
+        {
+          "name": "Mike Johnson",
+          "role": "Developer",
+          "content": "Best investment we've made this year. The ROI has been incredible.",
+          "image": "",
+          "rating": 5
+        }
+      ]
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "editorScript": "file:./editor.js",
+  "render": "file:./render.php"
+}

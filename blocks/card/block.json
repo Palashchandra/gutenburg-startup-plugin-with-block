@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "pctheme/card",
+  "title": "Card",
+  "category": "pctheme",
+  "icon": "admin-page",
+  "description": "A simple card with title, description and button",
+  "keywords": ["card", "box", "content"],
+  "textdomain": "pctheme-blocks",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Card Title"
+    },
+    "description": {
+      "type": "string",
+      "default": "This is a card description with some text content"
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "align": true,
+    "html": false
+  },
+  "editorScript": "file:./editor.js",
+  "render": "file:./render.php"
+}
