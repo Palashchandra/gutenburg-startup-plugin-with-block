@@ -8,6 +8,10 @@
 
 if (!defined('ABSPATH')) exit;
 
+// Include settings and custom CSS
+require_once plugin_dir_path(__FILE__) . 'includes/settings.php';
+require_once plugin_dir_path(__FILE__) . 'includes/custom-css.php';
+
 // Register blocks on init
 function pctheme_blocks_register() {
     // Register hero block
@@ -33,6 +37,11 @@ function pctheme_blocks_register() {
     // Register testimonial block
     if (file_exists(__DIR__ . '/blocks/testimonial/block.json')) {
         register_block_type(__DIR__ . '/blocks/testimonial');
+    }
+    
+    // Register cta block
+    if (file_exists(__DIR__ . '/blocks/cta/block.json')) {
+        register_block_type(__DIR__ . '/blocks/cta');
     }
 }
 add_action('init', 'pctheme_blocks_register');
@@ -110,3 +119,11 @@ function pctheme_blocks_category($categories) {
     );
 }
 add_filter('block_categories_all', 'pctheme_blocks_category', 10, 2);
+
+// Add settings link on plugins page
+function pctheme_blocks_settings_link($links) {
+    $settings_link = '<a href="admin.php?page=pctheme-blocks-settings">Settings</a>';
+    array_unshift($links, $settings_link);
+    return $links;
+}
+add_filter('plugin_action_links_' . plugin_basename(__FILE__), 'pctheme_blocks_settings_link');

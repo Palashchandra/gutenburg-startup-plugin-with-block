@@ -34,6 +34,27 @@
     "align": ["wide", "full"],
     "html": false
   },
+  "example": {
+    "attributes": {
+      "features": [
+        {
+          "title": "Fast Performance",
+          "description": "Lightning fast loading speeds",
+          "icon": "⚡"
+        },
+        {
+          "title": "Responsive Design",
+          "description": "Works on all devices",
+          "icon": "📱"
+        },
+        {
+          "title": "Easy to Use",
+          "description": "Simple and intuitive interface",
+          "icon": "✨"
+        }
+      ]
+    }
+  },
   "editorScript": "file:./editor.js",
   "render": "file:./render.php"
 }

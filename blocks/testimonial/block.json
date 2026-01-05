@@ -40,6 +40,33 @@
     "align": ["wide", "full"],
     "html": false
   },
+  "example": {
+    "attributes": {
+      "testimonials": [
+        {
+          "name": "John Doe",
+          "role": "CEO, Company",
+          "content": "This is an amazing product! It has completely transformed the way we work.",
+          "image": "",
+          "rating": 5
+        },
+        {
+          "name": "Jane Smith",
+          "role": "Marketing Manager",
+          "content": "Highly recommend this service. The team is professional and the results speak for themselves.",
+          "image": "",
+          "rating": 5
+        },
+        {
+          "name": "Mike Johnson",
+          "role": "Developer",
+          "content": "Best investment we've made this year. The ROI has been incredible.",
+          "image": "",
+          "rating": 5
+        }
+      ]
+    }
+  },
   "editorScript": "file:./editor.js",
   "render": "file:./render.php"
 }

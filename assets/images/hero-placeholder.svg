@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hero Background -->
+  <rect width="800" height="400" fill="url(#heroGradient)"/>
+  
+  <!-- Content Container -->
+  <g>
+    <!-- Title -->
+    <text x="400" y="120" font-size="48" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">
+      Welcome to Our Website
+    </text>
+    
+    <!-- Subtitle/Description -->
+    <text x="400" y="180" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle" font-family="Arial, sans-serif">
+      Create amazing experiences with Tailwind CSS
+    </text>
+    
+    <!-- CTA Button -->
+    <g>
+      <rect x="300" y="220" width="200" height="50" rx="8" fill="white"/>
+      <text x="400" y="252" font-size="16" font-weight="bold" fill="#3b82f6" text-anchor="middle" font-family="Arial, sans-serif">
+        Get Started
+      </text>
+    </g>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="80" r="40" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="700" cy="320" r="60" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="750" cy="80" r="30" fill="rgba(255,255,255,0.05)"/>
+</svg>

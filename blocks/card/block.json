@@ -34,6 +34,15 @@
     "align": true,
     "html": false
   },
+  "example": {
+    "attributes": {
+      "title": "Card Title",
+      "description": "This is a card description with some text content",
+      "buttonText": "Learn More",
+      "buttonUrl": "#",
+      "imageUrl": ""
+    }
+  },
   "editorScript": "file:./editor.js",
   "render": "file:./render.php"
 }

@@ -46,6 +46,39 @@
     "align": ["wide", "full"],
     "html": false
   },
+  "example": {
+    "attributes": {
+      "plans": [
+        {
+          "name": "Basic",
+          "price": "$29",
+          "period": "/month",
+          "features": ["Feature 1", "Feature 2", "Feature 3"],
+          "buttonText": "Get Started",
+          "buttonUrl": "#",
+          "featured": false
+        },
+        {
+          "name": "Pro",
+          "price": "$59",
+          "period": "/month",
+          "features": ["All Basic features", "Feature 4", "Feature 5", "Priority Support"],
+          "buttonText": "Get Started",
+          "buttonUrl": "#",
+          "featured": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "$99",
+          "period": "/month",
+          "features": ["All Pro features", "Feature 6", "Feature 7", "Dedicated Manager"],
+          "buttonText": "Contact Us",
+          "buttonUrl": "#",
+          "featured": false
+        }
+      ]
+    }
+  },
   "editorScript": "file:./editor.js",
   "render": "file:./render.php"
 }
